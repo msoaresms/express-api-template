@@ -1,0 +1,42 @@
+{
+  "name": "web-service",
+  "version": "0.0.0",
+  "description": "Template API Service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --ignore node_modules/ src/index.js",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "pretest": "npm run compile",
+    "posttest": "npm run check",
+    "release": "standard-version"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.5.0",
+    "mongoose": "^5.9.18"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@types/node": "^13.11.1",
+    "gts": "^2.0.2",
+    "husky": "^4.2.5",
+    "nodemon": "^2.0.4",
+    "standard-version": "^8.0.0",
+    "typescript": "^3.8.3"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
