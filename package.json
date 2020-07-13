@@ -31,7 +31,7 @@
     "gts": "^2.0.2",
     "husky": "^4.2.5",
     "nodemon": "^2.0.4",
-    "standard-version": "^8.0.0",
+    "standard-version": "^8.0.1",
     "typescript": "^3.8.3"
   },
   "husky": {
